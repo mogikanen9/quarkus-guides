@@ -1,5 +1,8 @@
 package org.acme.quickstart;
 
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.CompletionStage;
+
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -26,4 +29,12 @@ public class GreetingResource {
         return "hello";
     }
 
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    @Path("/async")
+    public CompletionStage<String> helloAsyng() {
+        return CompletableFuture.supplyAsync(() -> {
+            return "hello";
+        });
+    }
 }
