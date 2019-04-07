@@ -34,3 +34,5 @@ hs_err_pid*
 
 run-sonar-scanner.bat
 pom.xml.versionsBackup
+*.log
+**/Usersv*/**
