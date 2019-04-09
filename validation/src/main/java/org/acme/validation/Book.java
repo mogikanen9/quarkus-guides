@@ -11,7 +11,7 @@ public class Book {
     private String author;
 
     @Min(message = "Author has been very lazy", value = 1)
-    private double pages;
+    private int pages;
 
     public String getTitle() {
         return title;
@@ -33,7 +33,7 @@ public class Book {
         return pages;
     }
 
-    public void setPages(double pages) {
+    public void setPages(int pages) {
         this.pages = pages;
     }
 }
