@@ -36,9 +36,9 @@ public class SantaClausResource {
     }
 
     @POST
-    @Path("/gift")
+    @Path("/gift/{name}")
     @Produces(MediaType.APPLICATION_JSON)
-    public void createGift() {
-        service.createGift("some desc");
+    public void createGift(@PathParam("name") String name) {
+        service.createGift(name);
     }
 }

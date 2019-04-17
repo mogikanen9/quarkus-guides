@@ -1,5 +1,5 @@
-insert into SANTA.GIFT(ID,NAME) values (1,'Headphones');
-insert into SANTA.GIFT(ID,NAME) values (2,'iPad');
-insert into SANTA.GIFT(ID,NAME) values (3,'Macbook');
-insert into SANTA.GIFT(ID,NAME) values (4,'Watch');
-insert into SANTA.GIFT(ID,NAME) values (5,'iHome');
+insert into SANTA.GIFT(ID,NAME) values (1001,'Headphones');
+insert into SANTA.GIFT(ID,NAME) values (1002,'iPad');
+insert into SANTA.GIFT(ID,NAME) values (1003,'Macbook');
+insert into SANTA.GIFT(ID,NAME) values (1004,'Watch');
+insert into SANTA.GIFT(ID,NAME) values (1005,'iHome');
