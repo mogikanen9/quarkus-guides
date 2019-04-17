@@ -28,6 +28,13 @@ public class SantaClausResource {
         return service.findGift(id);
     }
 
+    @GET
+    @Path("/search/gift/{name}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Gift findGiftByName(@PathParam("name") String name) {
+        return service.findGiftByName(name).orElse(new Gift());
+    }
+
     @POST
     @Path("/gift")
     @Produces(MediaType.APPLICATION_JSON)
